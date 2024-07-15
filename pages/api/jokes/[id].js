@@ -12,6 +12,6 @@ export default async function handler(request, response) {
       return response.status(404).json({ status: 'Not Found' });
     }
 
-    response.status(200).json(joke);
+    return response.status(200).json(joke);
   }
 }
